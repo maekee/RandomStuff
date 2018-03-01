@@ -7,5 +7,7 @@
 4. Right click the Security key - Permissions...
 5. Add the AD group with read permissions you appended in step 2
 
-Now you can check if it works from another machine with PowerShell command, enter account that is a member of the AD group you added.Get-WinEvent -LogName Security -ComputerName DOMAINCONTROLLERNAME -MaxEvents 10 -Credential (Get-Credential) -ErrorAction Stop
+Now you can check if it works from another machine with PowerShell command, enter account that is a member of the AD group you added.
+Get-WinEvent -LogName Security -ComputerName DOMAINCONTROLLERNAME -MaxEvents 10 -Credential (Get-Credential) -ErrorAction Stop
+
 If it doesnt work, make sure that the account in the AD group is known of the membership and the HW FW/WinFW is open.
