@@ -4,4 +4,4 @@
 Start-Process -FilePath cmd.exe -Verb Runas -ArgumentList '/k C:\SysinternalsSuite\PsExec.exe -i -s powershell.exe'
 
 #You can also run as a managed account (gMSA) with:
-Start-Process -FilePath cmd.exe -Verb Runas -ArgumentList '/k C:\SysinternalsSuite\PsExec.exe -i -u aklagare\gmsa-accountnamehere$ powershell.exe'
+Start-Process -FilePath cmd.exe -Verb Runas -ArgumentList '/k C:\SysinternalsSuite\PsExec.exe -i -u domain\gmsa-accountnamehere$ powershell.exe'
