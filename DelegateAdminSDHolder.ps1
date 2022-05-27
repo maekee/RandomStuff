@@ -13,4 +13,4 @@ $ACL.AddAccessRule($ACE)
  
 Set-ACL -ACLObject $ACL -Path $ADObject
 
-#Thanks to @froxxon for working code
+#Thanks to https://github.com/froxxon for working code
